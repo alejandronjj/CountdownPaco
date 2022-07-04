@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Assets/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.countown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;/*responsiva*/
+}
+
+.countown div{
+   display: grid;
+   place-items: center;
+   padding: 10px;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 30px 10px; 
+}
+h3{
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+p{
+    display: grid;
+    place-items: center;
+    border: solid 1px white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #818109c2;/*color de los cìrculos*/
+
+}
+
+p:hover{
+    background-color: #000000d3;
+
+    transition: 0.5s; 
+}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #74ffe7;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.final-sms{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-200%);/*Oculta el contenedor*/
+    transition: ease-in-out 1s;
+    background-color: #333;
+
+}
+
+.final-sms h2{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
