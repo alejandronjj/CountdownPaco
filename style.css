@@ -93,3 +93,25 @@ span{
     font-size: 100px;
     color: white;
 }
+
+#empanada{
+    display: grid;
+    place-items: center;
+    border: solid 1px white;
+    height: 100px;
+    width: 200px;
+    border-radius: 5%;  
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000000c2;/*color de los cìrculos*/
+}
+#empanada:hover{
+        background-color: #2c75bf;
+    
+        transition: 0.5s;  
+}
+#empanada a{
+    text-decoration: none;
+    color: white;
+}
